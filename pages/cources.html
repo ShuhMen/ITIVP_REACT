@@ -57,20 +57,21 @@
     </nav>
     <main>
         <dialog id="dialog_sign">
-            <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img onclick=dialog_sign.close() style="position: absolute; top: 5%; right: 2%; width: 7%; height: 7%;" src="../icon/close-bold-svgrepo-com.svg">
                 <h2>Записаться на курс</h2>    
                 <label for="name">Имя:*</label>
                 <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
                 <label for="email">E-mail:*</label>
                 <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
-                <button  onclick="window.dialog_sign.close()" type="submit">Отправить</button>
+                <div class="submit" id="social_networks"></div>
                 <p>* — Обязательные поля</p>
             </div>
         </dialog>
 
         <div id="intensive" class="main-content intensive">
             <h1>ЛЕТНИЕ ИНТЕНСИВНЫЕ КУРСЫ</h1>
-            <div id="social_networks"></div>            
+            <a onclick="window.dialog_sign.showModal()" class="signup-button">ЗАПИСАТЬСЯ</a>
         </div>
         <div  class="container">
             <div class="content">
