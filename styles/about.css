@@ -1,0 +1,192 @@
+.banner,
+.team-member,
+.team-title {
+  text-align: center;
+}
+.intensive {
+  background: url("../assets/images/houses.webp") center center/cover no-repeat;
+}
+.group {
+  background: url("../assets/images/group.png") center center/cover no-repeat;
+}
+.banner {
+  background: url("../assets/images/mountains.png") center center/cover no-repeat;
+  padding: 50px 0;
+}
+.banner h1 {
+  color: #fff;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding: 10px 5%;
+}
+.info {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 2% 5% 0%;
+}
+.info p {
+  align-self: flex-start;
+}
+.team {
+  background-size: cover;
+  padding: 2px 5%;
+}
+.team-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  position: relative;
+  text-align: center;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+}
+
+/**/
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Кнопки переключения */
+.prev, .next {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+.team-member p {
+  margin-top: 5px;
+  color: #000;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 5%;
+  }
+  .info {
+    margin: 0;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 711px) {
+  .team {
+    background-size: cover;
+    padding: 10px 5%;
+    max-width: 90%;
+  }
+
+  .team-member {
+    text-align: center;
+    margin: 1%;
+    max-width: 85%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+  }
+  
+  .carousel-slide img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Кнопки переключения */
+  .prev, .next {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+}
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../styles/base.css">
+    <link rel="stylesheet" type="text/css" href="../styles/courses.css">
+    <title>Школа Норвежского Языка NORSK</title>
+
+    <script src="../scripts/base.js"></script>
+    <link rel="icon" href="../assets/images/norsk-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <script type="module" src="/scripts/cources.jsx"></script>
+    <header>
+        <a href="../index.html">
+            <div class="header-logo-link">
+                <img src="../assets/images/norsk-logo.png" alt="NORSK Logo">
+                <div>
+                    <h1 class="heading">NORSK</h1>
+                    <p class="subheading">школа норвежского языка
+                </div>
+            </div>
+        </a>
+        <div class="contact-info">
+            <p>Беларусь, г. Минск, ул. Платонова, 39</p>
+            <p>+375 (29) 941-47-24</p>
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a href="#home" class="active">Меню</a>
+
+        <div id="myLinks">
+            <a href="../index.html">ГЛАВНАЯ</a>
+            <a href="cources.html">КУРСЫ</a>
+            <a href="about.html">О НАС</a>
+            <a href="news.html">НОВОСТИ</a>
+            <a href="contacts.html">КОНТАКТЫ</a>
+        </div>
+        <a class="icon" onclick="myFunction()">
+            <img class="fa fa-bars" src="../assets/images/burger.svg" alt="burger_menu" style="width: fit-content;">        
+        </a>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">ГЛАВНАЯ</a></li>
+            <li><a href="cources.html">КУРСЫ</a></li>
+            <li><a href="about.html">О НАС</a></li>
+            <li><a href="news.html">НОВОСТИ</a></li>
+            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <dialog id="dialog_sign">
+            <div style="display: flex; flex-direction: column;">
+                <h2>Записаться на курс</h2>    
+                <label for="name">Имя:*</label>
+                <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
+                <label for="email">E-mail:*</label>
+                <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
+                <button  onclick="window.dialog_sign.close()" type="submit">Отправить</button>
+                <p>* — Обязательные поля</p>
+            </div>
+        </dialog>
+
+        <div id="intensive" class="main-content intensive">
+            <h1>ЛЕТНИЕ ИНТЕНСИВНЫЕ КУРСЫ</h1>
+            <div id="social_networks"></div>            
+        </div>
+        <div  class="container">
+            <div class="content">
+                <h1>Интенсивный курс норвежского языка — это краткосрочный (2–3 месяца) курс норвежского языка.</h1>
+                <p>Проводится несколько раз в год для тех, кто нуждается в быстром и эффективном получении элементарных
+                    навыков общения на норвежском языке и сведений о стране изучаемого языка.</p>
+                <p>Расписание занятий включает в себя до трёх занятий в неделю. За время обучения Вы получите
+                    лексический минимум, необходимый для общения на простые бытовые темы, и основы грамматики.</p>
+                <p>После окончания интенсивного курса можно продолжить обучение в одной из групп основного курса
+                    норвежского языка.</p>
+                <h2 class="highlight">Пройдя наш курс, вы научитесь:</h2>
+                <ul>
+                    <li>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты</li>
+                    <li>Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана</li>
+                    <li>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с
+                        запятой, но текст не дал сбить себя с толку</li>
+                </ul>
+                <a onclick="window.dialog_sign.showModal()" class="button">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</a>
+            </div>
+            <div class="sidebar">
+                <img class="zoomable" src="../assets/images/course-teacher.png" alt="Инголфр и Сигритр" style="width:100%;">
+                <h2 class="highlight">Инголфр и Сигритр</h2>
+                <p>Носители норвежского языка</p>
+                <p>Портрет «начинающего студента» у меня нарисовался после работы с десятками тысяч писем и вопросов от
+                    студентов и пользователей сайта, поэтому взялась его «рисовать» я со знанием дела. Итак, начинающий
+                    классический!</p>
+            </div>
+        </div>
+        <div id="group" class="main-content group">
+            <h1>ОБУЧЕНИЕ В ГРУППАХ ПО ГРАФИКУ</h1>
+            <a onclick="window.dialog_sign.showModal()" class="signup-button">ЗАПИСАТЬСЯ</a>
+        </div>
+        <div  class="container">
+            <div class="content">
+                <h1>Обучение в группах — самая доступная и популярная форма обучения в Скандинавской Школе</h1>
+                <p>При обучении в группах используется фиксированное расписание занятий, ориентированное на определённые
+                    дни и время обучения. Вы можете выбрать наиболее удобный график занятий в вечернее, дневное,
+                    утреннее время как в будние дни, так и в выходные.</p>
+                <p>По истечении основного курса норвежского языка уровень знаний, как правило, соответствует уровню B2
+                    согласно системе европейского языкового портфеля.</p>
+                <p>В настоящий момент в Скандинавской школе обучается более 10 тысяч студентов норвежского языка со
+                    всего мира. Если Вы уже изучали норвежский язык и хотите продолжить обучение, Вы можете пройти тест
+                    в электронном виде.</p>
+                <h2 class="highlight">Пройдя наш курс, вы научитесь:</h2>
+                <ul>
+                    <li>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты</li>
+                    <li>На берегу семантика большого языкового океана</li>
+                    <li>Семантика большого языкового океана</li>
+                </ul>
+                <a class="button" onclick="window.dialog_sign.showModal()">ЗАПИСАТЬСЯ НА ИНТЕНСИВ</a>
+            </div>
+            <div class="sidebar">
+                <img class="zoomable" src="../assets/images/group-teacher.png" alt="Грай Астрид" style="width:100%;">
+                <h2 class="highlight">Грай Астрид</h2>
+                <p>Путешественница, прошла курс «Обучение в группах»</p>
+                <p>Портрет «начинающего студента» у меня нарисовался после работы с десятками тысяч писем и вопросов от
+                    студентов и пользователей сайта, поэтому взялась его «рисовать» я со знанием дела. Итак, начинающий
+                    классический!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-legal">
+            <ul>
+                <li><a href="terms.html">Пользовательское соглашение</a></li>
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Школа норвежского языка. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

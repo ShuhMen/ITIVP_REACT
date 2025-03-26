@@ -1,0 +1,36 @@
+.banner h1 {
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px 1%;
+  margin: 1%;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 3%;
+}
+.info h1{
+  text-align: center;
+}
+.info p, .info h3{
+  align-self: flex-start;
+}
+@media screen and (max-width: 428px) {
+  .info h1{
+    font-size: medium;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rectangle {
+    display: none;
+  }
+}
