@@ -23,15 +23,3 @@ const ToggleButton = (text) => {
 };
 
 export default ToggleButton;
-
-export class GenButton extends React.Component {
-  render() {
-    return (
-      <a className="button">
-        {this.props.text}
-        <img src="/icon/web-app-manifest-192x192.png" alt="arrow_icon" />
-      </a>
-    );
-  }
-  DefaultProps = { text: "Button" };
-}
