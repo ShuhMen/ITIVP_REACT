@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import React, { useState, useEffect } from "react";
 import  Button from "@mui/material/Button";
 import { alignProperty } from "@mui/material/styles/cssUtils";
+import "./base.js"
 
 const SubmitButton = ({
   children,
@@ -55,6 +56,7 @@ const SubmitButton = ({
     </button>
   );
 };
+
 ReactDOM.createRoot(document.getElementById("social_networks")).render(
     <SubmitButton>
       Отправить

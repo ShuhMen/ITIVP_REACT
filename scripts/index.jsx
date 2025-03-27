@@ -33,7 +33,7 @@ createRoot(document.getElementById('root')).render(
                     <h3>Индивидуальное обучение</h3>
                     <p>В случае если у Вас сложное расписание, посменный график работы, или просто желание заниматься один на один с преподавателем, мы можем предложить Вам индивидуальную форму обучения.</p>
                     <p class="price">300.00 руб.</p>
-                    <Button class="more-info-btn" style={{ pointerEvents: "none", cursor: "default", backgroundColor: "grey"}} >НЕДОСТУПНО</Button>
+                    <Button class="more-info-btn" style={{ pointerEvents: "none", cursor: "default", backgroundColor: "grey", border: "grey"}} >НЕДОСТУПНО</Button>
                 </div>                    
                 <div class="study-form">
                     <img class="zoomable" src="assets/images/study-form3.jpg" alt="Team Member 3"/>
@@ -63,4 +63,4 @@ createRoot(document.getElementById('root')).render(
             </div>
         </div>
   </StrictMode>
-)
+);
