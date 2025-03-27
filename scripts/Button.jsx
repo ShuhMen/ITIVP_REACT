@@ -10,7 +10,6 @@ const ToggleButton = (text) => {
 
   const handleClick = () => {
     setIsActive(!isActive);
-    window.dialog_sign.showModal(); // Открытие диалога
   };
 
   return (
@@ -18,15 +17,13 @@ const ToggleButton = (text) => {
       onClick={handleClick}
       className={isActive ? "bg-green-500" : "bg-gray-500"}
     >
-      {isActive ? {text} : "Неактивно"}
+      {isActive ? text : "Неактивно"}
     </Button>
   );
 };
 
-
 export default ToggleButton;
 
-//Дефолтная кнопка
 export class GenButton extends React.Component {
   render() {
     return (
@@ -36,5 +33,5 @@ export class GenButton extends React.Component {
       </a>
     );
   }
-  DefaultProps = { text: "Button" /*, func: null*/ };
+  DefaultProps = { text: "Button" };
 }

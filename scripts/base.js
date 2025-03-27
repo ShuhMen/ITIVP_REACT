@@ -61,13 +61,12 @@ function myFunction() {
     }
 }
 
-//
 
 document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const slides = document.querySelectorAll(".carousel-slide");
     const totalSlides = slides.length;
-    const intervalTime = 3000; // Интервал автоматического переключения
+    const intervalTime = 3000; 
     let autoSlide = setInterval(nextSlide, intervalTime);
 
     function updateSlide(index) {

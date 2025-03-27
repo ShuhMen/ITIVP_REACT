@@ -61,9 +61,11 @@
                 <img onclick=dialog_sign.close() style="position: absolute; top: 5%; right: 2%; width: 7%; height: 7%;" src="../icon/close-bold-svgrepo-com.svg">
                 <h2>Записаться на курс</h2>    
                 <label for="name">Имя:*</label>
-                <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
+                <input type="text" name="name" placeholder="Иван" id="name" required
+                    minlength="2" maxlength="50">
                 <label for="email">E-mail:*</label>
-                <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
+                <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required
+                    maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 <div class="submit" id="social_networks"></div>
                 <p>* — Обязательные поля</p>
             </div>
