@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client"; //Импорты обязательны!!!
+import ReactDOM from "react-dom/client"; 
 
 import React, { useState, useEffect } from "react";
 import  Button from "@mui/material/Button";
