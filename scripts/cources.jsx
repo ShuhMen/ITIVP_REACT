@@ -22,6 +22,8 @@ const SubmitButton = ({
       mutations.forEach((mutation) => {
         if (mutation.attributeName === 'open' && dialog.open) {
           setIsSubmitted(false);
+          document.getElementById('name').value = "";
+          document.getElementById('email').value = "";
         }
       });
     });
