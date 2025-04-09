@@ -39,6 +39,9 @@ const SubmitButton = ({
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
+      }else{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
       }
     }
     setIsSubmitted(true);
@@ -158,7 +161,7 @@ const SignUpForm = ({ onClose }) => {
         name="name"
         id="name"
         required
-        placeholder="Иван Иванов"
+        placeholder="Иван"
         value={formData.name}
         onChange={handleChange}
       />
